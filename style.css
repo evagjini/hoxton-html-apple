@@ -21,8 +21,8 @@
 .apple-icon{
     transform: translateY(-3px);
 }
-.material-symbols-outlined{
-    color: #b3b3b3;
+.symbols-top{
+    color:#b3b3b3 ;
     transform:translateY(-6px) 
 }
 
@@ -156,6 +156,53 @@ color:#639fdd ;
 .product-item{
     border: 1px solid black;
     margin-top: 5px;
+}
+.grid-item-section{
+    display: grid;
+    grid-template-rows: repeat(1, minmax(0.1fr));
+}
+.product-item{
+    position: relative;
+    text-align: center;
+}
+.product-item-style-1{
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+.product-item-link{
+    text-decoration: none;
+    color: royalblue;
+}
+.product-item-link:hover{
+    text-decoration: underline;
+}
+.product-item-style-2{
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: black;
+}
+.product-item-link-2{
+    text-decoration: none;
+    color: orangered;
+}
+.product-item-style-3{
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+.product-item-link-3{
+    text-decoration: none;
+    color: white;
+}
+.product-item-link-3:hover{
+   text-decoration: underline;
 }
 
 footer p{
