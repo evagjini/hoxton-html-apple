@@ -102,10 +102,23 @@ color:#639fdd ;
     grid-auto-flow: column;
     gap: 30px;
     font-family: sans-serif;
+    justify-content: center;
     transform: translateX(-10px);
+
+
+
 }
 .cta-link{
-    text-decoration:
+    text-decoration:none;
+    display: grid;
+    grid-auto-flow: column;
+    align-items: center;
+    color: #639fdd;
+
+}
+.material-symbols-outlined{
+    transform:translatex(-3px);
+    color:#639fdd ;
 }
 
 .iphone-13{
@@ -134,28 +147,17 @@ color:#639fdd ;
     
 
 }
-.section-3{
-    grid-area: section-3;
+.grid-item-section{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: 300px;
+    gap: 0.5rem;
 }
-.section-4{
-    grid-area: section-4;
+.product-item{
+    border: 1px solid black;
+    margin-top: 5px;
 }
-.section-5{
-    grid-area: section-5;
-    background-color: royalblue;
-}
-.section-6{
-    grid-area: section-6;
-}
-.section-7{
-    grid-area: section-7;
-}
-.section-8{
-    grid-area: section-8;
-}
-.section-9{
-    grid-area: section-9;
-}
+
 footer p{
     font-size: 12px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
