@@ -204,7 +204,14 @@ color:#639fdd ;
 .product-item-link-3:hover{
    text-decoration: underline;
 }
-
+.product-item-style-4{
+    display: grid;
+    grid-template-rows: auto;
+    justify-items: center;
+}
+.text-product{
+    text-decoration: none;
+}
 footer p{
     font-size: 12px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
