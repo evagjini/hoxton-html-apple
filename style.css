@@ -405,6 +405,7 @@ footer{
     display: grid;
     justify-items: end;
 }
+
 @media  screen and (max-width: 750px) {
     .grid-item-section{
         grid-template-columns: 1fr;
@@ -414,11 +415,14 @@ footer{
 }
 @media screen and( max-width: 950px){
 .iphone-13-pro{
-    display:none
+    width: 50%;
+
 }
 }
-.iphone-13-pro.mobile{
-    display: block;
+@media screen and( max-width:950px){
+    .iphone-13{
+        width: 50%;
+    }
 
 }
 @media screen and (max-width: 950px) {
