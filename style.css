@@ -405,7 +405,7 @@ footer{
     display: grid;
     justify-items: end;
 }
-@media  screen and (max-width: 720px) {
+@media  screen and (max-width: 750px) {
     .grid-item-section{
         grid-template-columns: 1fr;
         padding: 0.5rem;
