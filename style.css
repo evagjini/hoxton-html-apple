@@ -7,15 +7,18 @@
     height: 100vh;
     display: grid;
     grid-template:
-    'header-1 header-1' 40px
-    'header-2 header-2' 40px
-    'section-1 sectio-1' auto
-    'section-2 section-2' auto
-    'section-3 section-3' auto
-    'section-4 section-5' auto
-    'section-6 section-7' auto
-    'section-8 section-9' auto
-    'footer     footer'   auto/
+    'header-1 ' 40px
+    'header-2 ' 40px
+    'section-1' auto
+    'section-2' auto
+    'section-3 ' auto
+    'section-4 ' auto
+    'section-5' auto
+    'section-6' auto
+    'section-7' auto
+    'section-8' auto
+    'section 9' auto
+    'footer '   1fr/
     auto        auto
 }
 .apple-icon{
@@ -118,7 +121,7 @@ color:#639fdd ;
 }
 .material-symbols-outlined{
     transform:translatex(-3px);
-    color:#639fdd ;
+    /* color:#639fdd ; */
 }
 
 .iphone-13{
@@ -156,6 +159,7 @@ color:#639fdd ;
 .product-item{
     border: 1px solid black;
     margin-top: 5px;
+
 }
 .grid-item-section{
     display: grid;
@@ -164,6 +168,8 @@ color:#639fdd ;
 .product-item{
     position: relative;
     text-align: center;
+    
+
 }
 .product-item-style-1{
     position: absolute;
@@ -171,7 +177,17 @@ color:#639fdd ;
     left: 50%;
     transform: translate(-50%, -50%);
     color: white;
+    
+
 }
+.produkt-item.dark{
+    color: #ffffffdd;
+}
+.product-item.down{
+
+align-content: end;
+}
+
 .product-item-link{
     text-decoration: none;
     color: royalblue;
@@ -200,6 +216,7 @@ color:#639fdd ;
 .product-item-link-3{
     text-decoration: none;
     color: white;
+    margin-right: 1rem;
 }
 .product-item-link-3:hover{
    text-decoration: underline;
@@ -211,10 +228,29 @@ color:#639fdd ;
 }
 .text-product{
     text-decoration: none;
+    align-content: center;
 }
+.product-item-style-5{
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    align-content: center;
+    display: grid;
+}
+
+.product-item-link-5{
+     grid-auto-flow: column;
+    display: grid;
+    justify-content: center;
+    transform: translateX(-10px);
+    text-decoration: none;
+}
+
+
 footer p{
     font-size: 12px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: sans-serif;
 }
 footer{
     background-color: #f5f5f7;
@@ -222,10 +258,10 @@ footer{
     color: #737376;
     display: grid;
     grid-template: 
-    '. top .' auto
-    '. middle .' auto
-    '. bottom .' auto /
-    500px 1fr 500px ;
+    '.  top top .' auto
+    ' . middle middle  .' auto
+    '. bottom  bottom .' auto /
+       auto 1fr auto auto ;
 }
 .top{
     grid-area: top;
@@ -371,3 +407,29 @@ footer{
     display: grid;
     justify-items: end;
 }
+@media  screen and (max-width: 720px) {
+    .grid-item-section{
+        grid-template-columns: 1fr;
+        padding: 0.5rem;
+    }
+    
+}
+@media screen and( max-width: 950px){
+.iphone-13-pro{
+    display:none
+}
+}
+.iphone-13-pro.mobile{
+    display: block;
+
+}
+@media screen and (max-width: 950px) {
+    .footer {
+      display: none;
+    }
+  
+    .footer.mobile {
+      display: block;
+    }
+  }
+ 
