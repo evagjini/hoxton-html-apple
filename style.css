@@ -238,8 +238,8 @@ align-content: end;
 }
 
 .product-item-link-5{
-     grid-auto-flow: column;
     display: grid;
+    grid-auto-flow: column;
     justify-content: center;
     transform: translateX(-10px);
     text-decoration: none;
